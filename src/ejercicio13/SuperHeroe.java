@@ -17,16 +17,16 @@ public class SuperHeroe {
 	final int MAX = 100;
 	final int MIN = 0;
 	
-	public void setNombre(String nombre) {
+	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public void setFuerza(int fuerza) {
+	private void setFuerza(int fuerza) {
 		this.fuerza = validarDato(fuerza);
 	}
-	public void setResistencia(int resistencia) {
+	private void setResistencia(int resistencia) {
 		this.resistencia = validarDato(resistencia);
 	}
-	public void setSuperpoder(int superpoder) {
+	private void setSuperpoder(int superpoder) {
 		this.superpoder = validarDato(superpoder);
 	}
 	private String getNombre() {
@@ -42,7 +42,7 @@ public class SuperHeroe {
 		return superpoder;
 	}
 	
-	public int validarDato(int dato) {
+	private int validarDato(int dato) {
 		if (dato < MIN) {
 			return MIN;
 		} else if (dato > MAX) {
